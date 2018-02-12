@@ -28,6 +28,7 @@ Enternally.Studentized.Residual <- studres(am)
 plot(Enternally.Studentized.Residual);
 title("Externally Studentized Residual")
 abline(h=c(-2,2),lty="dotted")
+
 for(i in 1:n){ if(abs(Enternally.Studentized.Residual[i])> 2)text(i+indent,Enternally.Stud qqnorm(Enternally.Studentized.Residual);abline(c(0,0),c(1,1)) plot(inf$hat);title("leverage plot")
 abline(h=2*p/n,lty=3) ## high leverage points
 leverage<-c(inf$hat>2*p/n) ## pick up high leverage points
