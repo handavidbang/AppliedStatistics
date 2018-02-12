@@ -83,7 +83,9 @@ par(mfrow=c(3,4)) plot(ratio,salary,pch=16,main="ratio vs salary")
 
 plot(ratio,takers,pch=16,main="ratio vs takers")
 plot(takers,salary,pch=16,main="takers vs salary")
-std <- lm1$resid / sigma plot(lm1$fitted.value,std);abline(h=c(-2,2),lty="dotted");title("Standardized residual plo indent = (max(lm1$fitted.value)-min(lm1$fitted.value))/20
+std <- lm1$resid / sigma plot(lm1$fitted.value,std);abline(h=c(-2,2),lty="dotted");title("Standardized residual plot") 
+indent = (max(lm1$fitted.value)-min(lm1$fitted.value))/20
+                                                                  
 for(i in 1:n){ if(abs(std[i])> 2)
 text(lm1$fitted.value[i]+indent,std[i],i,cex=0.6) }
 indent = n/25
