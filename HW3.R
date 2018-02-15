@@ -1,4 +1,4 @@
-setwd("~/Desktop/664Solution")
+setwd(""~/Desktop/R"")
 library(faraway)
 head(prostate)
 
