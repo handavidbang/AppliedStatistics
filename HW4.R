@@ -1,4 +1,4 @@
-setwd("~/Desktop/664Solution")
+setwd("~/Desktop/R")
 data(sat,package="faraway")
 attach(sat)
 lm <- lm(total~expend+ratio+salary)
